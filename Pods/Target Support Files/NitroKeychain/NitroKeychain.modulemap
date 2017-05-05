@@ -1,0 +1,6 @@
+framework module NitroKeychain {
+  umbrella header "NitroKeychain-umbrella.h"
+
+  export *
+  module * { export * }
+}
