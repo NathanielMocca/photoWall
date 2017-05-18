@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F2E99451ECC8AB500640F10 /* RestResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E99441ECC8AB500640F10 /* RestResponse.m */; };
+		1F2E99481ECDF6DA00640F10 /* RestRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E99471ECDF6DA00640F10 /* RestRequestTests.m */; };
 		1F679C501EC8C73700202465 /* RestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F679C4F1EC8C73700202465 /* RestClient.m */; };
 		1F679C531EC8C85A00202465 /* RestRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F679C521EC8C85A00202465 /* RestRequest.m */; };
 		1F698C1B1EBC6396008D353A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F698C1A1EBC6396008D353A /* main.m */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		1F2E99431ECC8AB500640F10 /* RestResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestResponse.h; path = RestClient/RestResponse.h; sourceTree = "<group>"; };
 		1F2E99441ECC8AB500640F10 /* RestResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestResponse.m; path = RestClient/RestResponse.m; sourceTree = "<group>"; };
+		1F2E99471ECDF6DA00640F10 /* RestRequestTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestRequestTests.m; path = RestClient/RestRequestTests.m; sourceTree = "<group>"; };
 		1F679C4E1EC8C73700202465 /* RestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestClient.h; path = RestClient/RestClient.h; sourceTree = "<group>"; };
 		1F679C4F1EC8C73700202465 /* RestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestClient.m; path = RestClient/RestClient.m; sourceTree = "<group>"; };
 		1F679C511EC8C85A00202465 /* RestRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestRequest.h; path = RestClient/RestRequest.h; sourceTree = "<group>"; };
@@ -81,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F2E99461ECDF68B00640F10 /* RestClient */ = {
+			isa = PBXGroup;
+			children = (
+				1F2E99471ECDF6DA00640F10 /* RestRequestTests.m */,
+			);
+			name = RestClient;
+			sourceTree = "<group>";
+		};
 		1F679C4B1EC8A53500202465 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +169,7 @@
 		1F698C351EBC6396008D353A /* photoWallTests */ = {
 			isa = PBXGroup;
 			children = (
+				1F2E99461ECDF68B00640F10 /* RestClient */,
 				1F698C361EBC6396008D353A /* photoWallTests.m */,
 				1F698C381EBC6396008D353A /* Info.plist */,
 			);
@@ -401,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F698C371EBC6396008D353A /* photoWallTests.m in Sources */,
+				1F2E99481ECDF6DA00640F10 /* RestRequestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
