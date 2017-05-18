@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2E99451ECC8AB500640F10 /* RestResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E99441ECC8AB500640F10 /* RestResponse.m */; };
+		1F679C501EC8C73700202465 /* RestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F679C4F1EC8C73700202465 /* RestClient.m */; };
+		1F679C531EC8C85A00202465 /* RestRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F679C521EC8C85A00202465 /* RestRequest.m */; };
 		1F698C1B1EBC6396008D353A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F698C1A1EBC6396008D353A /* main.m */; };
 		1F698C1E1EBC6396008D353A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F698C1D1EBC6396008D353A /* AppDelegate.m */; };
 		1F698C211EBC6396008D353A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F698C201EBC6396008D353A /* ViewController.m */; };
@@ -30,6 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F2E99431ECC8AB500640F10 /* RestResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestResponse.h; path = RestClient/RestResponse.h; sourceTree = "<group>"; };
+		1F2E99441ECC8AB500640F10 /* RestResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestResponse.m; path = RestClient/RestResponse.m; sourceTree = "<group>"; };
+		1F679C4E1EC8C73700202465 /* RestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestClient.h; path = RestClient/RestClient.h; sourceTree = "<group>"; };
+		1F679C4F1EC8C73700202465 /* RestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestClient.m; path = RestClient/RestClient.m; sourceTree = "<group>"; };
+		1F679C511EC8C85A00202465 /* RestRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestRequest.h; path = RestClient/RestRequest.h; sourceTree = "<group>"; };
+		1F679C521EC8C85A00202465 /* RestRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestRequest.m; path = RestClient/RestRequest.m; sourceTree = "<group>"; };
 		1F698C161EBC6396008D353A /* photoWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photoWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F698C1A1EBC6396008D353A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F698C1C1EBC6396008D353A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +81,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F679C4B1EC8A53500202465 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1F679C4C1EC8A54000202465 /* RestClient */ = {
+			isa = PBXGroup;
+			children = (
+				1F679C4E1EC8C73700202465 /* RestClient.h */,
+				1F679C4F1EC8C73700202465 /* RestClient.m */,
+				1F679C511EC8C85A00202465 /* RestRequest.h */,
+				1F679C521EC8C85A00202465 /* RestRequest.m */,
+				1F2E99431ECC8AB500640F10 /* RestResponse.h */,
+				1F2E99441ECC8AB500640F10 /* RestResponse.m */,
+			);
+			name = RestClient;
+			sourceTree = "<group>";
+		};
+		1F679C4D1EC8A54900202465 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		1F698C0D1EBC6395008D353A = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +131,9 @@
 		1F698C181EBC6396008D353A /* photoWall */ = {
 			isa = PBXGroup;
 			children = (
+				1F679C4D1EC8A54900202465 /* View */,
+				1F679C4C1EC8A54000202465 /* RestClient */,
+				1F679C4B1EC8A53500202465 /* Model */,
 				1F698C1C1EBC6396008D353A /* AppDelegate.h */,
 				1F698C1D1EBC6396008D353A /* AppDelegate.m */,
 				1F698C1F1EBC6396008D353A /* ViewController.h */,
@@ -348,8 +387,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F698C271EBC6396008D353A /* photoWall.xcdatamodeld in Sources */,
+				1F679C531EC8C85A00202465 /* RestRequest.m in Sources */,
+				1F2E99451ECC8AB500640F10 /* RestResponse.m in Sources */,
 				1F698C211EBC6396008D353A /* ViewController.m in Sources */,
 				1F698C1E1EBC6396008D353A /* AppDelegate.m in Sources */,
+				1F679C501EC8C73700202465 /* RestClient.m in Sources */,
 				1F698C1B1EBC6396008D353A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +591,7 @@
 				1F698C3D1EBC6396008D353A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F698C3E1EBC6396008D353A /* Build configuration list for PBXNativeTarget "photoWallTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +600,7 @@
 				1F698C401EBC6396008D353A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
